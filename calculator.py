@@ -5,7 +5,7 @@ Using our arithmetic.py file from Exercise02, create the
 calculator program yourself in this file.
 """
 import arithmetic 
-import re
+#import re 
 
 def main():
     # Your code goes here
@@ -28,14 +28,15 @@ def main():
     if user_math_operator == "+":
         result = arithmetic.add(first_num, second_num)
         print result
-
-    else:
-        return 0
-
-    if user_math_operator == "-":
+    elif user_math_operator == "-":
         result = arithmetic.subtract(first_num, second_num)
         print result
-
+    elif user_math_operator == "/":
+        result = arithmetic.divide(first_num, second_num)
+        print result
+    elif user_math_operator == "mod":
+        result = arithmetic.mod(first_num, second_num)
+        print result
     else:
         return 0
 
